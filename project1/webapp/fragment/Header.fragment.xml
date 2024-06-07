@@ -1,0 +1,13 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Bar>
+        <contentMiddle>
+            <Label
+                text="Login Page"
+                class='sapUiSmallMarginEnd'
+            />
+        </contentMiddle>
+    </Bar>
+</core:FragmentDefinition>

@@ -1,0 +1,39 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <VBox
+        alignItems="Center"
+        class='sapUiSmallMarginTop'
+    >
+        <Label
+            text="Login Page"
+            design="Bold"
+            class="sapUiSmallMarginBottom myTextColor myTextFont"
+        />
+        <Label
+            text="Username"
+            design="Bold"
+            class="myTextColor labelFont"
+        />
+        <Input
+            type="Text"
+            placeholder="Enter your username"
+        />
+        <Label
+            text="Password"
+            design="Bold"
+            class="myTextColor labelFont margintop"
+        />
+        <Input
+            type="Password"
+            placeholder="Enter your password"
+        />
+        <Button
+            text="Login"
+            type="Emphasized"
+            class="loginBtn"
+            press="onLogin"
+        />
+    </VBox>
+</core:FragmentDefinition>

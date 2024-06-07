@@ -1,0 +1,143 @@
+<mvc:View
+    controllerName="com.incture.project1.controller.MasterDetail"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="MASTER DETAIL PAGE"
+    >
+        <headerContent>
+            <Button
+                text="Logout"
+                type="Emphasized"
+                press="onOpenLogout"
+            />
+        </headerContent>
+        <content>
+            <SplitContainer
+                id="MySplitContainer"
+                initialDetail="detail"
+                initialMaster="master"
+            >
+                <masterPages>
+                    <Page
+                        title="Your Favourites"
+                        backgroundDesign="List"
+                    >
+                        <List
+                            itemPress="onListItemPress"
+                            items="{/data}"
+                            mode="SingleSelectMaster"
+                            selectionChange="onSelectEmployee"
+                        >
+                            <StandardListItem
+                                title="{FirstName}"
+                                type="Active"
+                                class="sapUiSmallMargin"
+                            />
+                        </List>
+                    </Page>
+                </masterPages>
+                <detailPages>
+                    <Page
+                        id="Employee1"
+                        title="Employee"
+                        backgroundDesign="Solid"
+                    >
+                        <FlexBox
+                            justifyContent="Center"
+                            alignItems="Center"
+                        >
+                            <VBox alignItems="Center">
+                                <Text text="Employee ID : 1" />
+                                <Text text="First Name : Andrew" />
+                                <Text text="Last Name : Mathew" />
+                                <Text text="Title : Vice President, Sales" />
+                                <Text text="City : Tacoma" />
+                                <Text text="Country : USA" />
+                            </VBox>
+                        </FlexBox>
+                    </Page>
+                    <Page
+                        id="Employee2"
+                        title="Employee"
+                        backgroundDesign="Solid"
+                    >
+                        <FlexBox
+                            justifyContent="Center"
+                            alignItems="Center"
+                        >
+                            <VBox alignItems="Center">
+                                <Text text="Employee ID : 2" />
+                                <Text text="First Name : Andrew" />
+                                <Text text="Last Name : Mathew" />
+                                <Text text="Title : Vice President, Sales" />
+                                <Text text="City : Tacoma" />
+                                <Text text="Country : USA" />
+                            </VBox>
+                        </FlexBox>
+                    </Page>
+                    <Page
+                        id="Employee3"
+                        title="Employee"
+                        backgroundDesign="Solid"
+                    >
+                        <FlexBox
+                            justifyContent="Center"
+                            alignItems="Center"
+                        >
+                            <VBox alignItems="Center">
+                                <Text text="Employee ID : 1" />
+                                <Text text="First Name : Andrew" />
+                                <Text text="Last Name : Mathew" />
+                                <Text text="Title : Vice President, Sales" />
+                                <Text text="City : Tacoma" />
+                                <Text text="Country : USA" />
+                            </VBox>
+                        </FlexBox>
+                    </Page>
+                    <Page
+                        id="Employee4"
+                        title="Employee"
+                        backgroundDesign="Solid"
+                    >
+                        <FlexBox
+                            justifyContent="Center"
+                            alignItems="Center"
+                        >
+                            <VBox alignItems="Center">
+                                <Text text="Employee ID : 1" />
+                                <Text text="First Name : Andrew" />
+                                <Text text="Last Name : Mathew" />
+                                <Text text="Title : Vice President, Sales" />
+                                <Text text="City : Tacoma" />
+                                <Text text="Country : USA" />
+                            </VBox>
+                        </FlexBox>
+                    </Page>
+                    <Page
+                        id="Employee5"
+                        title="Employee"
+                        backgroundDesign="Solid"
+                    >
+                        <FlexBox
+                            justifyContent="Center"
+                            alignItems="Center"
+                        >
+                            <VBox alignItems="Center">
+                                <Text text="Employee ID : 1" />
+                                <Text text="First Name : Andrew" />
+                                <Text text="Last Name : Mathew" />
+                                <Text text="Title : Vice President, Sales" />
+                                <Text text="City : Tacoma" />
+                                <Text text="Country : USA" />
+                            </VBox>
+                        </FlexBox>
+                    </Page>
+                </detailPages>
+            </SplitContainer>
+        </content>
+    </Page>
+</mvc:View>
